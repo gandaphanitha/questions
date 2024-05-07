@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Questions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- extra fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./question.css">
+</head>
+
+<body>
+    <h2>General Questions</h2>
+    <div class="question">
+        <div class="title">
+            <p>do you have credit card?</p>
+            <button class="btn">
+                <span class="plus-icon">
+                    <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                    <i class="far fa-minus-square"></i>
+                </span>
+            </button>
+        </div>
+        <div class="text hidden">
+            <p>"Yes, I have."</p>
+        </div>
+    </div>
+    <div class="question">
+        <div class="title">
+            <p>do you support  farmers?</p>
+            <button class="btn">
+                <span class="plus-icon">
+                    <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                    <i class="far fa-minus-square"></i>
+                </span>
+            </button>
+        </div>
+        <div class="text hidden">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde quia. Dolor recusandae
+                repellat maxime est eligendi sed, ab blanditiis aperiam ullam, ex sint accusantium dolorum dignissimos
+                eum, enim provident!</p>
+        </div>
+    </div>
+    <div class="question">
+        <div class="title">
+            <p>Have you visited Tirumala?</p>
+            <button class="btn">
+                <span class="plus-icon">
+                    <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                    <i class="far fa-minus-square"></i>
+                </span>
+            </button>
+        </div>
+        <div class="text hidden">
+            <p>
+                Yes, I have visited Tirumala.</p>
+        </div>
+    </div>
+    <script src="./question.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+const questions = document.querySelectorAll(".question");:
+This line selects all elements with the class name .question using the querySelectorAll method. It returns a NodeList containing all the elements matching the selector.
+questions.forEach(function (question) { ... });:
+This iterates over each element in the questions NodeList using the forEach method.
+It provides a callback function that will be executed for each element in the NodeList. This function receives each individual element as an argument, which is represented by the parameter question.
+const btn = question.querySelector(".question-btn");:
+Inside the loop, this line selects the button element with the class name .question-btn within the current .question element.
+It uses querySelector method to find the first descendant element that matches the provided CSS selector.
+btn.addEventListener("click", function () { ... });:
+This adds a click event listener to the button btn.
+When the button is clicked, the callback function provided (the second argument) will be executed.
+const text = question.querySelector(".question-text");:
+Inside the click event listener function, this line selects the element with the class name .question-text within the current .question element.
+It finds the paragraph element associated with the current question.
+text.classList.toggle("hidden");:
+This toggles the class name hidden on the paragraph element text.
+If the class is present, it removes it; if it's absent, it adds it.
+This class is used to control whether the paragraph is displayed or hidden.
+question.classList.toggle("show-text");:
+This toggles the class name show-text on the current .question element.
+This class is used to control additional styling or behavior on the question container. In this case, it might be used to change the appearance of the question (e.g., expand or collapse). However, in the provided code, it doesn't appear to be used for any visible effect.
+
+
+ -->
